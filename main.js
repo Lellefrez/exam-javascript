@@ -11,21 +11,21 @@ punti)
 
     const nomeUtente = prompt("Qual'è il tuo nome?");
     const annoDiNascita = Number(prompt("Indica il tuo anno di nascita"));
-    
+
     const annoBisestile = (anno) => {
         return (anno % 4 === 0 && anno % 100 !== 0) || anno % 400 === 0;
     }
-    
+
     const messaggioUtente = `Ciao ${nomeUtente}, `;
-    
+
     let messaggioBisestile;
-    
+
     if (annoBisestile(annoDiNascita)) {
         messaggioBisestile = "Questo è un anno bisestile!";
     } else {
         messaggioBisestile = "Questo non è un anno bisestile.";
     }
-    
+
     console.log(messaggioUtente, messaggioBisestile);
 */
 
@@ -91,8 +91,9 @@ Il nuovo rating risultante, non può superare 10. (2.5 punti)
 4. Stampa in console ogni proprietà dell'oggetto libro in questo formato: "[chiave]:
 [valore]"
 . (5 punti)
-*/
 
+
+*/
 const book = {
     title: "Il Grande Gatsby",
     author: "F. Scott Fitzgerald",
@@ -113,6 +114,8 @@ delete book.year;
 for (const key in book) {
     console.log(`${key}: ${book[key]}`);
 }
-
+// qui utilizzo la funzione
 book.increaseRating(3);
 console.log(book.rating);
+
+//________________________ ex 4 _______________________________
